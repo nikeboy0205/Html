@@ -1,0 +1,413 @@
+﻿<!DOCTYPE HTML>
+<html lnag="ko">
+<head>
+	<title>환영합니다.</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+	<link href="css/calender.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<link href="css/swiper.css" rel="stylesheet">
+	<link href="css/swiper01.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale="1">
+</head>
+ <body>
+ <header id="head">
+ <div class="swiper-container">
+	<ul class="swiper-wrapper">
+		<li class="swiper-slide"><img src="images/back.png" alt="그림1"></li>
+		<li class="swiper-slide"><img src="images/back-01.png" alt="그림1"></li>
+		<li class="swiper-slide"><img src="images/back-02.png" alt="그림1"></li>
+	</ul>
+	<!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+ </div>
+ </div>
+ <div id="form01">
+ 	<h1><img src="images/logo.png" alt="logo"></h1>
+	<ul>
+		<li><a href="#">회원가입</a></li>
+		<li><a href="#">로그인</a></li>
+	</ul>
+<nav class="form02">
+	<ul>
+		<li><a href="#footerWrap">회사소개</a></li>
+		<li><a href="#notice">공지사항</a></li>
+		<li><a href="#video">갤러리</a></li>
+		<li><a href="#reservation">상품예약</a></li>
+		<li><a href="#event">이벤트</a></li>
+	</ul>
+</nav>
+</div>
+</header>
+<section id="imformation">
+ <h2>상품소개</h2>
+	<div class="main01">
+
+	<dl>
+		<dt>진실의 입</dt>
+		<dd>진실의 입이란 이름은 중세시대때 사람들을 심문할때</br>
+			진실을 말하지 않으면손이 짤려도 좋다라고 서약한데서 유래했다.</dd>
+
+	</dl>
+	</div>
+	<div class="main02">
+	<dl>
+		<dt>트래비 분수</dt>
+		<dd>그림 같은 로마의 일상에 빠져 볼 수 있는 ‘베네치아 광장’</br>
+			주변, 동전 2개만 있으면 곧 다가올 연인과의 사랑을 꿈꿔 볼 수 있는 로맨틱함 가득한 </br>
+			트레비 분수</dd>
+	</dl>
+	</div>
+	<div class="main03">
+	<dl>
+		<dt>디멜라 자네</dt>
+		<dd>가지와 치즈의 만남 이탈리아 가정식 파르미자나 디멜라자네</br>
+			가지요리를 싫어하는 사람도 거부감 없이 먹을수 있는 요리</dd>
+	</dl>
+	</div>
+	<div class="main04">
+	<dl>
+		<dt>콘스탄티누스 개선문</dt>
+		<dd>모든길은 로마로 통한다 또한 로마를  천년동안 부흥하게 한  업적을 만든
+			왕은 누구일까?</br> 콘스탄티누스 1세의 업적을 찾아서</dd>
+	</dl>
+	</div>
+	<div class="main05">
+	<dl>
+		<dt>콜로세움</dt>
+		<dd> 1층은 높이 10.5m의 도리아식 반원주, 2층은 높이 11.85m의 이오니아식 기둥,
+			3층은 11.6m의 코린트식 기둥으로 되어 있고,	4층은 관중들이 작렬하는 햇빛을
+			피할 수 있게 벨라리움이라는 천막을 고정시키기 위한 장대장치를 지탱하는 240여개의
+			기둥들로 되어 있다.
+			크기만으로도 웅장한곳인데 안가볼수는 없다.</dd>
+	</dl>
+	</div>
+</sect ion>
+	<h2>항공예약</h2>
+<section id="reservation">
+	<div class='wrap'>
+	<div class='btn-holder'>
+		<button id='btnPrev'>&lt;</button>
+		 <span id='currentDate'></span>
+		<button id='btnNext'>&gt;</button>
+	</div>
+	<div id="calendar"></div>
+</div>
+  <form>
+	<form>
+		<legend></legend>
+		<fieldset>
+		<div class="name">이름: <input type="text" value="홍길동"></div>
+		<div class="num">예약인원:
+		<select>
+			<option value="1명">1명</option>
+			<option value="2명">2명</option>
+			<option value="3명">3명</option>
+			<option value="4명">4명</option>
+			<option value="5명"selected>5명</option>
+			<option value="6명">6명</option>
+			<option value="7명">7명</option>
+		</select>
+		</div>
+		<div class="date">예약날짜:<input type="date" id="now_date"></div>
+		<div class="cellphone">예약자 핸드폰번호: <input type="text" value="010-1234-5678"></div>
+		<div class="email">E-mail	: <input type="text" value="abcde@naver.com"></div>
+		<button type="submit" class="btn01">예약하기</button>
+		<dl>
+		<dt></dt>
+		<dd>여행도시:인천,이탈리아 로마 시내 보카델라,피자 디 트레비</dd>
+		<dd>피자 델 콜로세우 뷔 디 산 그래고리우</dd>
+		<dd>교통편: 대한항공</dd>
+		<dd>여행기간: 당일</dd>
+		<dd>예약인원: 1명이상</dd>
+		<dd>모이는장소: Am 8:00 인천국제공항 C카운터</dd>
+		</dl>
+	</fieldset>
+ </form>
+</section>
+<section id="notice">
+<article class="notice01">
+ <h3>여행시 주의 사항</h3>
+	<ol>
+		<li>단독투어시에는 가이드의 입장료와 식사비를 부담해 주셔야 합니다.</li>
+		<li>기본 투어시간 외 추가적으로  진행 원할 경우, 시간당 50유로 추가비용이 생합니다.(현장지불)</li>
+		<li>천재지변, 현지사고, 개인일정 변경 및 차질로 인한 투어 취소는 책임지지 않습니다.</li>
+		<li>추가로 발생하는 입장료 등은 현지 물가변동에 따라서 예고 없이 변경될 수 있습니다.</li>
+		<li>현지 사정(파업,시위,교통 체증 등)에 따라 투어 동선은 달라질 수 있으며, 이에 따른투어비 환불은 불가합니다.</li>
+		<li>개인적으로 이탈하여 발생한 사고에 대해서는 본사나 가이드가 책임을 지지 않으며, 가이드의 주의사항을 무시하거나, 권고에 따르지 않아 여행자의 부주의로 발생한 사고 등의 대해서는 가이드 및 당사는 책임을 지지 않습니다.</li>
+		<li>단독투어시에는 가이드의 입장료와 식사비를 부담해 주셔야 합니다.</li>
+		<li>기본 투어시간 외 추가적으로 진행 원할 경우, 시간당 50유로 추가 비용이 발생합니다.(현장지불)</li>
+		<li>투어일 기준으로 당일예약 또는 하루전 예약시, 현지로 문의하시기 바랍니다.</li>
+ 	</ol>
+</article>
+<article class="notice02">
+		<h3>여행시 주의 사항</h3>
+			<ul class="tab">
+				<li><a href="#no01">포함&불포함사항</a></li>
+				<li><a href="#no02">기타안내</a></li>
+				<li><a href="#no03">추가비용</a></li>
+			</ul>
+	<div id="content">
+	<dl id="no01">
+		<dt>포함&불포함사항</dt>
+			<dd>포함사항</br>
+				국제 항공료(유류 할증료+ 공항세) 호텔료 (2인 1실)</br>
+				전용버스 일정내 관람료, 여행자 보험료</br>
+				불포함 사항</br>
+				여권비용 및 기타 개인경비, 매너팁($1~$2)</dd>
+	</dl>
+	<dl id="no02">
+		<dt>기타안내</dt>
+			<dd>여행 개시 30일전: 계약금 환급</br>
+				여행 개시 20일전:상품가격 10%배상</br>
+				여행 개시  10일전:상품가격 15%배상</br>
+				여행 개시 9일전:상푸가격 20% 배상</br>
+				여행 개시  2일전:상품가격 30%배상</br>
+				여행개시 1일전: 상품가격 50%배상</br>
+				여행 당일 통보시: 상품가격 50%배상</br>
+				여행 일정중 발생할수 있는 모든 안전사고에 유의하시기 바라며 가이드의 안내사항및 안전수칙을 준수하십시오.</dd>
+	</dl>
+	<dl id="no03">
+		<dt>기타 추가비용</dt>
+			<dd> 헬로우트래블 전문 가이드비</br>
+			교통비(1일권-7유로)</br>
+			입장료 (콜로세움 입장료 8유로)</br>
+			중식(약 15-20유로)</br>
+			가이드 입장료 및 식사비용</dd>
+
+	</dl>
+	</div>
+
+</article>
+
+</section>
+<section id="video">
+		<iframe src="https://www.youtube.com/embed/ezpniI1GsT8"
+		frameborder="0" width="745"height="508" gesture="media" allow="encrypted-media"  autoplay allowfullscreen></iframe>
+</section>
+<aside id="event">
+	<ol>
+		<li>보조 배터리무료대여</li>
+		<li>인천 김포 김해, 부산항 (공항 수령 반납)</li>
+		<li>SM면세점 할인쿠폰</li>
+		<li>무제한 무료통화  (APP이용시)</li>
+	</ol>
+	<dl>
+		<dt>기본 구성품</dt>
+			<dd>와이파이 본체 1EA, 충전기 9.0V 1EA</br>
+			연결선 1EA, 변압기 보조배터리 1EA</br>
+			보조배터리 충전기 1 EA</br>
+			제품 설명서 1EA</dd>
+
+	</dl>
+</aside>
+<footer>
+<div id="footerWrap">
+	<ul  class="sns">
+		<li><a href="http://www.facebook.com"><img src="images/pic11.png" alt="facebook"></a></li>
+		<li><a href="http://www.youtube.com"><img src="images/pic12.png" alt="youtube"></a></li>
+		<li><a href="http://www.twitter.com"><img src="images/pic13.png" alt="twitter"></a></li>
+	</ul>
+
+		<ul  class="footnote01">
+			<li>회사명:㈜헬로우트래블</li>
+			<li>브랜드명 : 온라인상담센터</li>
+			<li>대표자 : 이은선</li>
+			<li>전화 : 1544-4164</li>
+			<li>팩스 : 02-6455-0170</li>
+		</ul>
+
+	 <ul  class="footnote02">
+		<li>개인정보보호책임자 : CPO@interpark.com</li>
+		<li>개인정보보유기간 : 회원탈퇴시까지 이메일주소 무단수집거부</li>
+	 </ul>
+
+	<dl  class="footnote03">
+		<dt>사업자등록번호 :</dt><dd>105-87-51896</dd>
+		<dt>통신판매업신고번호 :</dt><dd>제2014-서울마포-0580호</dd>
+		<dt>관광사업자등록번호 :</dt><dd>제2014- 000026호</dd>
+	</dl>
+
+		<dl  class="footnote04">
+			<dt>주소:</dt><dd>서울특별시 마포구 월드컵로 106</dd>
+			<dt>개인정보보호책임자:</dt><dd>이은선</dd>
+			<dt>이메일:</dt><dd>goodboy@gmail.com</dd>
+		</dl>
+
+
+	<p  class="footnote05">㈜헬로우트래블 영업보증보험 5천5백만원가입</br>
+		 ※ ㈜헬로우트래블에서는 여행상품만을 전문으로</br>
+		판매하는 여행사입니다.</p>
+
+	<div class="footnote06">
+		<p>항공권이 포함된 상품의경우,표시되는 상품요금은 예상 유류할증료와 제세공과금이 포함된 가격이며 발권일/환율등에 따라 변동될수 있습니다.</br>
+		<small>&copy;Copyright hellotravel All rights reserved.</small></p>
+	</div>
+	</div>
+	</footer>
+
+	<div id="top">
+	<a href="#">Top</a>
+	</div>
+
+	<script>
+		$(".btn01").on('click',function(){
+			alert("예약되었습니다")
+		});
+
+
+	//nav메뉴바
+
+	$('nav>ul>li>a').on('click',function(){
+	var topNum =$(this).attr('href');
+	var topPos =$(topNum).offset().top;
+	$('html,body').animate({scrollTop:topPos-60},500,'swing');
+});
+	//dl 이동바
+$(function(){
+	$('div#content>dl:not(div#content>dl:first)').css('display','none');
+});
+$(function(){
+	$('ul.tab>li>a').click(function(e){
+		var hrefName =$(this).attr('href');
+	$('div#content>dl').css('display','none');
+	$(hrefName).css('display','block');
+	return false;
+	});
+	});
+	//하단top이동
+	$(function(){
+		$('div#top').on('click',function()
+    {
+		  $('html,body').animate({scrollTop:'0px',scrollLeft:'0px'},300,'swing');
+	  });
+	});
+	//배경 이미지 bxslider이동
+	var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    //direction: 'vertical',
+    loop: true,
+
+	//If you need autoplay
+	  autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+	// If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+	  clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+	})
+	document.getElementById('now_date').valueAsDate = new Date();
+
+
+/*달력 만들기*/
+	var calendar = new controller();
+calendar.init();
+
+function controller(target) {
+
+	var that = this;
+	var m_oMonth = new Date();
+	m_oMonth.setDate(1);
+
+	this.init = function() {
+		that.renderCalendar();
+		that.initEvent();
+	}
+
+    /* 달력 UI 생성 */
+	this.renderCalendar = function() {
+		var arrTable = [];
+
+		arrTable.push('<table><colgroup>');
+		for(var i=0; i<7; i++) {
+			arrTable.push('<col width="100">');
+		}
+		arrTable.push('</colgroup><thead><tr>');
+
+		var arrWeek = "일월화수목금토".split("");
+
+		for(var i=0, len=arrWeek.length; i<len; i++) {
+			var sClass = '';
+			sClass += i % 7 == 0 ? 'sun' : '';
+			sClass += i % 7 == 6 ? 'sat' : '';
+			arrTable.push('<td class="'+sClass+'">' + arrWeek[i] + '</td>');
+		}
+		arrTable.push('</tr></thead>');
+		arrTable.push('<tbody>');
+
+		var oStartDt = new Date(m_oMonth.getTime());
+        // 1일에서 1일의 요일을 빼면 그 주 첫번째 날이 나온다.
+		oStartDt.setDate(oStartDt.getDate() - oStartDt.getDay());
+
+		for(var i=0; i<100; i++) {
+			if(i % 7 == 0) {
+				arrTable.push('<tr>');
+			}
+
+			var sClass = 'date-cell '
+            sClass += m_oMonth.getMonth() != oStartDt.getMonth() ? 'not-this-month ' : '';
+			sClass += i % 7 == 0 ? 'sun' : '';
+			sClass += i % 7 == 6 ? 'sat' : '';
+
+			arrTable.push('<td class="'+sClass+'">' + oStartDt.getDate() + '</td>');
+			oStartDt.setDate(oStartDt.getDate() + 1);
+
+			if(i % 7 == 6) {
+				arrTable.push('</tr>');
+				if(m_oMonth.getMonth() != oStartDt.getMonth()) {
+					break;
+				}
+			}
+		}
+		arrTable.push('</tbody></table>');
+
+		$('#calendar').html(arrTable.join(""));
+
+		that.changeMonth();
+	}
+
+    /* Next, Prev 버튼 이벤트 */
+	this.initEvent = function() {
+		$('#btnPrev').click(that.onPrevCalendar);
+		$('#btnNext').click(that.onNextCalendar);
+	}
+
+    /* 이전 달력 */
+	this.onPrevCalendar = function() {
+		m_oMonth.setMonth(m_oMonth.getMonth() - 1);
+		that.renderCalendar();
+	}
+
+    /* 다음 달력 */
+	this.onNextCalendar = function() {
+		m_oMonth.setMonth(m_oMonth.getMonth() + 1);
+		that.renderCalendar();
+	}
+
+    /* 달력 이동되면 상단에 현재 년 월 다시 표시 */
+	this.changeMonth = function() {
+		$('#currentDate').text(that.getYearMonth(m_oMonth).substr(0,9));
+	}
+
+    /* 날짜 객체를 년 월 문자 형식으로 변환 */
+	this.getYearMonth = function(oDate) {
+		return oDate.getFullYear() + '년 ' + (oDate.getMonth() + 1) + '월';
+	}
+}
+</script>
+</body>
+</html>
